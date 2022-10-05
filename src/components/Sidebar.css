@@ -39,13 +39,17 @@ button {
   background-color: #dfdfdf;
 }
 
+.app-sidebar-note.active {
+  background-color: #dfdfdf;
+}
+
 .app-sidebar-note-title {
   display: flex;
   justify-content: space-between;
 }
 
 .app-sidebar-note {
-  margin: 10px 0;
+  margin: 0;
 }
 
 .app-sidebar-note small {
