@@ -41,5 +41,14 @@
 .markdown-preview {
   padding: 0 25px 25px 25px;
   line-height: 2rem;
-  
+
+}
+
+.noActiveNote {
+  width: 70%;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(136, 134, 134);
 }
