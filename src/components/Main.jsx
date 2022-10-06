@@ -1,5 +1,6 @@
 import React from 'react';
 import './Main.css';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 export const Main = ({activeNote, onUpdateNote}) => {
 
@@ -35,11 +36,9 @@ export const Main = ({activeNote, onUpdateNote}) => {
       </div>
       <div className="app-main-note-preview">
         <h1 className='preview-title'>{activeNote.title}</h1>
-        <div className='markdown-preview'>{activeNote.content}</div>
-        <small>最後の編集日:{new Date(activeNote.modDate).toLocaleDateString("ja-JP", {
-              hour: "2-digit",
-              minute: "2-digit"
-            })}</small>
+        <ReactMarkdown className='markdown-preview'>
+          {activeNote.content}
+        </ReactMarkdown>
       </div>
     </div>
   )
